@@ -1,0 +1,124 @@
+/*.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register-container input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.register-container button {
+  padding: 10px;
+  background: #198754;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+*/
+/* Page background */
+body {
+  background: linear-gradient(135deg, #e9f5ef, #f8f9fa);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main card */
+.register-container {
+  max-width: 420px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 30px 25px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Heading */
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #198754;
+  font-weight: 600;
+}
+
+/* Form layout */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs */
+.register-container input {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.register-container input:focus {
+  border-color: #198754;
+}
+
+/* Register button */
+.register-container button[type="submit"] {
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 15px;
+  background: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-container button[type="submit"]:hover {
+  background: #146c43;
+}
+
+/* Login link button */
+.login-btn {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #0d6efd;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-btn:hover {
+  text-decoration: underline;
+}
+
+/* Footer text */
+.register-container p {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 🔹 Responsive for small screens */
+@media (max-width: 480px) {
+  .register-container {
+    margin: 30px auto;
+    padding: 22px 18px;
+  }
+
+  .register-container h2 {
+    font-size: 20px;
+  }
+}

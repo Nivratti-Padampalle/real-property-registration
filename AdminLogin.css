@@ -1,0 +1,228 @@
+/* Admin Login Container */
+/*.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.admin-login-container form {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.admin-login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.admin-login-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.admin-login-container input:focus {
+  border-color: #1d2671;
+  box-shadow: 0 0 6px rgba(29, 38, 113, 0.4);
+}
+
+
+.admin-login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-login-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.admin-login-container button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.admin-login-container .note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .admin-login-container form {
+    padding: 28px 22px;
+  }
+
+  .admin-login-container h2 {
+    font-size: 20px;
+  }
+
+  .admin-login-container input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .admin-login-container button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+*/
+/* Admin Login Container */
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;              /* 🔥 vertical layout */
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  padding: 40px 20px;                  /* 🔥 more space */
+  box-sizing: border-box;
+}
+
+/* Page Title */
+.admin-login-container h2 {
+  text-align: center;
+  margin-bottom: 35px;                 /* 🔥 distance from box */
+  color: #ffffff;                      /* 🔥 bright white */
+  font-weight: 700;
+  font-size: 26px;                     /* 🔥 bigger */
+  letter-spacing: 1px;                 /* 🔥 premium look */
+}
+
+/* Login Card */
+.admin-login-container form {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Input Fields */
+.admin-login-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.admin-login-container input:focus {
+  border-color: #1d2671;
+  box-shadow: 0 0 6px rgba(29, 38, 113, 0.4);
+}
+
+/* Button */
+.admin-login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-login-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.admin-login-container button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional subtitle text */
+.admin-login-container .note {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #f1f1f1;
+  opacity: 0.9;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .admin-login-container form {
+    padding: 28px 22px;
+  }
+
+  .admin-login-container h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .admin-login-container input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .admin-login-container button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

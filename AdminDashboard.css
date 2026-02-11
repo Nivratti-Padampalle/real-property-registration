@@ -1,0 +1,164 @@
+/* Admin Dashboard Container */
+.admin-container {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Title */
+.admin-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1d2671;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Head */
+.admin-table th {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Table Body */
+.admin-table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Zebra rows */
+.admin-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover row */
+.admin-table tr:hover {
+  background-color: #f1f4ff;
+}
+
+/* Status Badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Action Buttons */
+.approve-btn,
+.reject-btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approve-btn {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+}
+
+.reject-btn {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  margin-left: 8px;
+}
+
+.approve-btn:hover,
+.reject-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.approve-btn:active,
+.reject-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled Buttons */
+.approve-btn:disabled,
+.reject-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Empty Text */
+.admin-container p {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .admin-table th,
+  .admin-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .admin-container h2 {
+    font-size: 22px;
+  }
+
+  .approve-btn,
+  .reject-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-table {
+    font-size: 12px;
+  }
+
+  .admin-container h2 {
+    font-size: 20px;
+  }
+
+  .status {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
